@@ -2,5 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: 'echo "TODO: Replace with init/build command"'
-    command: 'echo "TODO: Replace with command to start project"'
+  - init: 'python3 -m venv --system-site-packages ./venv && source ./venv/bin/activate'
+    command: 'pip install --upgrade pip && pip install --upgrade tensorflow'
